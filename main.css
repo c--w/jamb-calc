@@ -1,0 +1,32 @@
+@import url("bootstrap-icons.css");
+
+html {
+    font-size: min(4vw, 26px);
+}
+
+* {
+    transition: all .3s ease-out;
+    transition: transform .8s ease-out;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 900;
+    color: #444444;
+    background-color: beige;
+}
+
+#menu {
+    align-self: center;
+    width: auto;
+}
+
+#result {
+    align-self: center;
+    margin-top: 10vh;
+    z-index: 1;
+}
