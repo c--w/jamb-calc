@@ -1,4 +1,4 @@
-const N=10000;
+const N=100000;
 function calculate() {
     let dices = $('#dices').val();
     let tries = $('#tries').val();
@@ -22,9 +22,12 @@ function compare(a, b) {
     for(let i=0; i<a.length; i++) {
         if(a[i] == '?')
             continue;
-        if(!b.includes(Number(a[i]))) {
+        let num = Number(a[i]);
+        if(!b.includes(num)) {
             ok = false;
             break;
+        } else {
+            b.splice(b.indexOf(num), 1);
         }
     }
     return ok;
