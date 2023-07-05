@@ -1,5 +1,10 @@
 const N = 1000000;
 function calculate() {
+    $('#calc').addClass('rotation');
+    setTimeout(calculate2, 0);
+}
+
+function calculate2() {
     let dices = $('#dices').val();
     let tries = $('#tries').val();
     let target = $('#target').val();
@@ -13,7 +18,8 @@ function calculate() {
             }
         }
     }
-    $('#result').html(Math.round(okeys / N * 10000)/100 + "%");
+    $('#result').html(Math.round(okeys / N * 10000) / 100 + "%");
+    $('#calc').removeClass('rotation');
 }
 
 function compare(a, b) {
@@ -33,9 +39,9 @@ function compare(a, b) {
                 bb.splice(bb.indexOf(num), 1);
             }
         }
-        if(ok)
+        if (ok)
             break;
-        else if(k < aa.length-1)
+        else if (k < aa.length - 1)
             ok = true;
     }
     return ok;

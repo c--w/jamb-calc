@@ -30,3 +30,16 @@ body {
     margin-top: 10vh;
     z-index: 1;
 }
+
+.rotation {
+    animation: rotateThis 2s infinite linear;
+}
+
+@keyframes rotateThis {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
