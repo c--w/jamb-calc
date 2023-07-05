@@ -1,4 +1,4 @@
-const N = 100000;
+const N = 1000000;
 function calculate() {
     let dices = $('#dices').val();
     let tries = $('#tries').val();
