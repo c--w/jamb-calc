@@ -13,7 +13,7 @@ function calculate() {
             }
         }
     }
-    $('#result').html(Math.round(okeys / N * 100) + "%");
+    $('#result').html(Math.round(okeys / N * 10000)/100 + "%");
 }
 
 function compare(a, b) {
